@@ -1,0 +1,23 @@
+nodes:
+  - task: self::password-generator
+    title: "Password Generate #2"
+    node_id: password-generator#2
+    inputs_from:
+      - handle: length
+        value: 30
+      - handle: numbers
+        value: true
+      - handle: symbols
+        value: true
+      - handle: lowercase
+        value: true
+      - handle: uppercase
+        value: true
+      - handle: exclude
+        value: ""
+      - handle: easyRead
+        value: true
+      - handle: customChars
+        value: ""
+      - handle: count
+        value: 3

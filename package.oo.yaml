@@ -1,0 +1,12 @@
+version: 1.0.0
+scripts:
+  # Script executed when the container is first loaded
+  # eg: bootstrap: pip install pandas
+  bootstrap: 
+icon: ":twemoji:locked-with-key:currentColor:"
+name: password-generator
+description: Password Generator
+displayName: Password Generator
+releaseType: package
+releaseNotes: First release
+repository: https://github.com/BlackHole1/oomol-password-generator

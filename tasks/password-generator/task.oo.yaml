@@ -1,0 +1,55 @@
+executor:
+  name: nodejs
+  options:
+    entry: main.ts
+inputs_def:
+  - handle: length
+    json_schema:
+      type: number
+      minimum: 1
+    value: 10
+  - handle: numbers
+    json_schema:
+      type: boolean
+    value: true
+  - handle: symbols
+    json_schema:
+      type: boolean
+    value: true
+  - handle: lowercase
+    json_schema:
+      type: boolean
+    value: true
+  - handle: uppercase
+    json_schema:
+      type: boolean
+    value: true
+  - handle: exclude
+    json_schema:
+      type: string
+    value: ""
+    nullable: false
+  - handle: easyRead
+    json_schema:
+      type: boolean
+    value: false
+  - handle: customChars
+    json_schema:
+      type: string
+    value: ""
+  - handle: count
+    json_schema:
+      type: number
+      minimum: 1
+    value: 1
+outputs_def:
+  - handle: single
+    json_schema:
+      type: string
+  - handle: multiple
+    json_schema:
+      type: array
+      items:
+        type: string
+      minItems: 1
+title: Password Generate

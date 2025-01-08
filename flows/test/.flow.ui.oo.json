@@ -1,0 +1,12 @@
+{
+  "nodes": {
+    "password-generator#2": {
+      "rfNode": {
+        "position": {
+          "x": 630,
+          "y": 450
+        }
+      }
+    }
+  }
+}
