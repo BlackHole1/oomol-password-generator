@@ -2,7 +2,7 @@ version: 1.0.0
 scripts:
   # Script executed when the container is first loaded
   # eg: bootstrap: pip install pandas
-  bootstrap: 
+  bootstrap:
 icon: ":twemoji:locked-with-key:currentColor:"
 name: password-generator
 description: Password Generator

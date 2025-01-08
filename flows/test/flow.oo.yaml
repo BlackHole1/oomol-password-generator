@@ -1,6 +1,6 @@
 nodes:
   - task: self::password-generator
-    title: "Password Generate #2"
+    title: "Password Generate"
     node_id: password-generator#2
     inputs_from:
       - handle: length
@@ -20,4 +20,4 @@ nodes:
       - handle: customChars
         value: ""
       - handle: count
-        value: 3
+        value: 5
