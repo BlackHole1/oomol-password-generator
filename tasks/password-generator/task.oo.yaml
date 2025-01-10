@@ -5,8 +5,9 @@ executor:
 inputs_def:
   - handle: length
     json_schema:
-      type: number
-      minimum: 1
+      type: integer
+      ui:options:
+        step: 1
     value: 10
   - handle: numbers
     json_schema:
@@ -39,8 +40,9 @@ inputs_def:
     value: ""
   - handle: count
     json_schema:
-      type: number
-      minimum: 1
+      type: integer
+      ui:options:
+        step: 1
     value: 1
 outputs_def:
   - handle: single

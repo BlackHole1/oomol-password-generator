@@ -1,4 +1,4 @@
-version: 1.0.0
+version: 1.0.1
 scripts:
   # Script executed when the container is first loaded
   # eg: bootstrap: pip install pandas
@@ -8,5 +8,5 @@ name: password-generator
 description: Password Generator
 displayName: Password Generator
 releaseType: package
-releaseNotes: First release
+releaseNotes: Fix length and count can be floating point number
 repository: https://github.com/BlackHole1/oomol-password-generator
