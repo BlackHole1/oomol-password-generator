@@ -4,41 +4,50 @@ executor:
     entry: main.ts
 inputs_def:
   - handle: length
+    description: "Password length in characters"
     json_schema:
       type: integer
       ui:options:
         step: 1
     value: 10
   - handle: numbers
+    description: "Include numbers (0-9) in password"
     json_schema:
       type: boolean
     value: true
   - handle: symbols
+    description: "Include symbols (!@^*_+-.) in password"
     json_schema:
       type: boolean
     value: true
   - handle: lowercase
+    description: "Include lowercase letters (a-z) in password"
     json_schema:
       type: boolean
     value: true
   - handle: uppercase
+    description: "Include uppercase letters (A-Z) in password"
     json_schema:
       type: boolean
     value: true
   - handle: exclude
+    description: "Characters to exclude from password generation"
     json_schema:
       type: string
     value: ""
     nullable: false
   - handle: easyRead
+    description: "Enable easy-to-read mode (excludes confusing characters like 0/O, 1/l/I)"
     json_schema:
       type: boolean
     value: false
   - handle: customChars
+    description: "Custom character set to use (overrides other character type settings)"
     json_schema:
       type: string
     value: ""
   - handle: count
+    description: "Number of passwords to generate"
     json_schema:
       type: integer
       ui:options:
@@ -46,12 +55,17 @@ inputs_def:
     value: 1
 outputs_def:
   - handle: single
+    description: "The first generated password"
     json_schema:
       type: string
   - handle: multiple
+    description: "Array of all generated passwords"
     json_schema:
       type: array
       items:
         type: string
       minItems: 1
 title: Password Generate
+description: "Generates secure passwords with customizable options including
+  character types, length, exclusions, and easy-to-read mode. Supports batch
+  generation and uses cryptographically secure random number generation."
